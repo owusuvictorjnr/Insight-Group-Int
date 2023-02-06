@@ -4,19 +4,19 @@ import Link from 'next/link';
 
 const Navbar = () => {
   return (
-    <div className="bg-[#f5ebe0] h-36 border-b flex items-center top-0 bottom-0 ">
+    <div className="bg-[#f5ebe0] h-36 border-b  fixed items-center flex  top-0 z-20 left-0 right-0 ">
       <div className="flex justify-evenly  w-full">
         <div className="flex gap-5">
           <Link href={'/'}>
             <Image
               src="/logo/logo1.jpg"
               alt="logo1"
-              width="70"
-              height="70"
+              width="100"
+              height="100"
               className="rounded-full "
             />
           </Link>
-         
+
           <p className="capitalize flex items-center text-3xl text-[#1d3557]">
             <Link href={'/'}>insight group int.</Link>
           </p>
