@@ -98,7 +98,8 @@ const Footer = () => {
 
         <div className="pt-20 pb-10 text-[#727374] flex justify-between mx-20">
           <p className="capitalize">
-            copyright 2023 all rights reserved | insight group international
+            copyright &copy; 2023 all rights reserved | insight group
+            international
             <div className="pb-10 text-center">read policy</div>
           </p>
 
