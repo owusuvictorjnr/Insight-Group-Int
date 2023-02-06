@@ -1,14 +1,23 @@
+import Image from 'next/image';
 import React from 'react';
 
 const LandingPage = () => {
   return (
     <div className="">
-      <video
+      {/* <video
         src="/video/vid1.mp4"
         alt="video"
         muted={true}
         autoPlay={true}
-        className="h-[30rem] w-screen p-2"
+  className="h-[30rem] w-screen p-2"
+  />*/}
+
+      <Image
+        src={'/img/pic5.jpg'}
+        alt="background image"
+        height={500}
+        width={500}
+        className="py-10 h-full w-screen px-5"
       />
 
       <h1>welcome to insight group international</h1>
