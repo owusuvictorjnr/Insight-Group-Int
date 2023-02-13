@@ -2,8 +2,12 @@ import React from 'react';
 import LandingPage from './LandingPage';
 import { RiHandHeartLine } from 'react-icons/ri';
 import { IoRibbonOutline } from 'react-icons/io5';
-import { GrAchievement } from 'react-icons/gr';
+import { CiTrophy } from 'react-icons/ci';
 import { BsPiggyBank } from 'react-icons/bs';
+import { FiDatabase } from 'react-icons/fi';
+import { SlDiamond } from 'react-icons/sl';
+import { GrGroup } from 'react-icons/gr';
+
 import Image from 'next/image';
 import DateTime from './Datetime';
 
@@ -32,17 +36,30 @@ const Home = () => {
               </p>
 
               {/*3 cards under welcome*/}
-              <div className="grid lg:grid-cols-3 md:grid-cols-2 m-5 container mx-auto">
-                <div className="h-40 w-40 m-5 mb-3 border-2">
-                  <p>total donation</p>
+              <div className="grid lg:grid-cols-3 md:grid-cols-2 m-5  mb-5 ">
+                <div className="h-40 w-40 m-5 border-2 py-10  ">
+                  <FiDatabase size={30} color={'#76c893'} className="mx-5" />
+
+                  <p className="mx-5 text-2xl font-bold pt-3">&#x20B5; 5.6</p>
+                  <p className="py-2 text-sm mx-5 capitalize ">
+                    total donation
+                  </p>
                 </div>
 
-                <div className="h-40 w-40 m-5 mb-3 border-2">
-                  <p>total donation</p>
+                <div className="h-40 w-40 m-5 border-2 py-10  ">
+                  <SlDiamond size={30} color={'#76c893'} className="mx-5" />
+                  <p className="mx-5 text-2xl font-bold pt-3">4284</p>
+                  <p className="py-2 text-sm mx-5 capitalize ">
+                    total projects
+                  </p>
                 </div>
 
-                <div className="h-40 w-40  m-5 mb-3 border-2">
-                  <p>total donation</p>
+                <div className="h-40 w-40 m-5 border-2 py-10  ">
+                  <GrGroup size={30} color={'#76c893'} className="mx-5" />
+                  <p className="mx-5 text-2xl font-bold pt-3">300</p>
+                  <p className="py-2 text-sm mx-5 capitalize ">
+                    total volunteers
+                  </p>
                 </div>
               </div>
             </div>
@@ -98,7 +115,7 @@ const Home = () => {
             <div className="w-[25rem] lg:w-[30rem] h-[15rem] bg-[#f1faee]  rounded-md mb-5 container mx-auto ">
               <div className="flex justify-center capitalize">
                 <h2 className="flex justify-center pt-10 gap-3 text-2xl text-[#34a0a4]">
-                  <GrAchievement size={30} color={'#76c893'} />
+                  <CiTrophy size={30} color={'#76c893'} />
                   child education
                 </h2>
               </div>
