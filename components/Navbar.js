@@ -22,30 +22,32 @@ const Navbar = () => {
           </p>
         </div>
 
-        <div className="flex items-center gap-10 lg:gap-20 capitalize text-2xl">
-          <Link href={'/'} className="">
-            <ul className="cursor-pointer py-2 px-2 hover:border-[#1d3557] hover:bg-[#d6ccc2] rounded-xl hover:text-[#bc6c25] text-[#ffb703] hover:underline duration-500  ">
-              <li>home</li>
-            </ul>
-          </Link>
+        <div className="md:flex hidden">
+          <div className="flex items-center gap-10 lg:gap-20 capitalize text-2xl">
+            <Link href={'/'} className="">
+              <ul className="cursor-pointer py-2 px-2  hover:bg-brightRedLight rounded-xl hover:text-brightRedSupLight text-white bg-brightRed hover:underline duration-500  md:block">
+                <li>home</li>
+              </ul>
+            </Link>
 
-          <Link href={'/about'}>
-            <ul className="cursor-pointer py-2 px-2 hover:border-[#1d3557] hover:bg-[#d6ccc2] rounded-xl hover:text-[#bc6c25] text-[#ffb703] hover:underline duration-500  ">
-              <li>about</li>
-            </ul>
-          </Link>
+            <Link href={'/about'}>
+              <ul className="cursor-pointer py-2 px-2  hover:bg-brightRedLight rounded-xl hover:text-brightRedSupLight text-white bg-brightRed hover:underline duration-500  md:block">
+                <li>about</li>
+              </ul>
+            </Link>
 
-          <Link href={'/contact'}>
-            <ul className="cursor-pointer py-2 px-2 hover:border-[#1d3557] hover:bg-[#d6ccc2] rounded-xl hover:text-[#bc6c25] text-[#ffb703] hover:underline duration-500  ">
-              <li>contact</li>
-            </ul>
-          </Link>
+            <Link href={'/contact'}>
+              <ul className="cursor-pointer py-2 px-2 hover:border-[#1d3557] hover:bg-[#d6ccc2] rounded-xl hover:text-[#bc6c25] text-[#ffb703] hover:underline duration-500  ">
+                <li>contact</li>
+              </ul>
+            </Link>
 
-          <Link href={'/sponsors'}>
-            <ul className="cursor-pointer py-2 px-2 hover:border-[#1d3557] hover:bg-[#d6ccc2] rounded-xl hover:text-[#bc6c25] text-[#ffb703] hover:underline duration-500  ">
-              <li>sponsors</li>
-            </ul>
-          </Link>
+            <Link href={'/sponsors'}>
+              <ul className="cursor-pointer py-2 px-2 hover:border-[#1d3557] hover:bg-[#d6ccc2] rounded-xl hover:text-[#bc6c25] text-[#ffb703] hover:underline duration-500  ">
+                <li>sponsors</li>
+              </ul>
+            </Link>
+          </div>
         </div>
       </div>
     </div>
