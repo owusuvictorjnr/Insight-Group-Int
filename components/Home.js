@@ -94,8 +94,15 @@ const Home = () => {
             <div className="lg:w-[30rem] w-[25rem] h-[15rem] bg-[#f1faee]  rounded-md mb-5 container mx-auto ">
               <div className="flex justify-center capitalize">
                 <h2 className="flex justify-center pt-10 gap-3 text-2xl text-[#34a0a4]">
-                  <RiHandHeartLine size={30} color={'#76c893'} /> give donation
+                  <RiHandHeartLine size={30} color={'#76c893'} />
+                  give donation
                 </h2>
+              </div>
+              <div className="pt-10 container mx-auto flex items-center">
+                <p className="mx-5 text-sm text-darkBlue">
+                  Power modern applications with enriched querying capabilities,
+                  new operators, added encryption features and more.
+                </p>
               </div>
             </div>
 
@@ -105,6 +112,12 @@ const Home = () => {
                   <IoRibbonOutline size={30} color={'#76c893'} />
                   become a volunteer
                 </h2>
+              </div>
+              <div className="pt-10 container mx-auto flex items-center">
+                <p className="mx-5 text-sm text-darkBlue">
+                  Power modern applications with enriched querying capabilities,
+                  new operators, added encryption features and more.
+                </p>
               </div>
             </div>
           </div>
@@ -119,6 +132,12 @@ const Home = () => {
                   child education
                 </h2>
               </div>
+              <div className="pt-10 container mx-auto flex items-center">
+                <p className="mx-5 text-sm text-darkBlue">
+                  Power modern applications with enriched querying capabilities,
+                  new operators, added encryption features and more.
+                </p>
+              </div>{' '}
             </div>
 
             <div className="w-[25rem] lg:w-[30rem] h-[15rem] bg-[#f1faee]  rounded-md mb-5 container mx-auto">
@@ -126,6 +145,12 @@ const Home = () => {
                 <h2 className="flex justify-center pt-10 gap-3 text-2xl text-[#34a0a4]">
                   <BsPiggyBank size={30} color={'#76c893'} /> quick fundraise
                 </h2>
+              </div>
+              <div className="pt-10 container mx-auto flex items-center">
+                <p className="mx-5 text-sm text-darkBlue">
+                  Power modern applications with enriched querying capabilities,
+                  new operators, added encryption features and more.
+                </p>
               </div>
             </div>
           </div>
@@ -154,7 +179,7 @@ const Home = () => {
         </div>
       </div>
 
-      {/*event*/}
+      {/*upcoming event*/}
       <div className="min-h-[35rem] bg-slate-500 mb-5">
         <div className="flex justify-center pt-[8rem] capitalize text-3xl text-[#3a0ca3]">
           <h1>upcoming events</h1>
@@ -168,15 +193,17 @@ const Home = () => {
         </div>
 
         <div className="mt-20 flex justify-between container mx-auto">
-          <div className="flex gap-5">
-            <Image
-              src={'/img/pic9.jpg'}
-              alt={'event1'}
-              height={500}
-              width={500}
-              className="rounded-xl mb-10"
-            />
-            <div>
+          <div>
+            <div className="flex gap-5">
+              <Image
+                src={'/img/pic9.jpg'}
+                alt={'event1'}
+                height={250}
+                width={250}
+                className="rounded-xl mb-10"
+              />
+            </div>
+            <div className="grid md:grid-1">
               <DateTime />
               <h1 className="capitalize lg:text-2xl text-[#ffffff] pt-10 mx-5 flex flex-col">
                 today is a volunteers day
