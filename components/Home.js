@@ -14,7 +14,7 @@ import DateTime from './Datetime';
 const Home = () => {
   return (
     <div className=" w-screen bg-[#ffffff] flex flex-col">
-      <div className="min-h-[40rem] mt-[3rem] w-full flex justify-center container mx-auto ">
+      <div className="min-h-[40rem] mt-[10rem] w-full flex justify-center container mx-auto ">
         <LandingPage />
       </div>
 
@@ -162,7 +162,7 @@ const Home = () => {
               forget what you can get and see what you can give
               </p>*/}
         </div>
-        <div className="flex justify-center py-3 ">
+        <div className="flex justify-center py-3 pt-10">
           <button className="">
             <p className="bg-[#06ec57] py-3 px-3 capitalize text-[#ffffff] rounded-full hover:bg-[#ffffff] hover:text-[#06ec57] border-[#06ec57] border-2 duration-500">
               become a volunteer
