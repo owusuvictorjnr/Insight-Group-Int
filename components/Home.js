@@ -14,12 +14,12 @@ import DateTime from './Datetime';
 const Home = () => {
   return (
     <div className=" w-screen bg-[#ffffff] flex flex-col">
-      <div className="min-h-[40rem] mt-[10rem] w-full flex justify-center container mx-auto ">
+      <div className="min-h-[20rem] mt-[10rem] w-full flex justify-center container mx-auto ">
         <LandingPage />
       </div>
 
       {/*welcome card */}
-      <div className="min-h-[40rem] lg:mt-[10rem]">
+      <div className="min-h-[40rem] lg:mt-[10rem] md:mt-[5rem]">
         <div className="flex justify-center container mx-auto">
           <h1 className="text-[#3a0ca3] underline capitalize lg:text-3xl md:text-2xl">
             welcome to insight group international
@@ -61,7 +61,7 @@ const Home = () => {
 
           {/*right image card*/}
           <div className="container mx-auto pt-20">
-            <div className="container mx-auto flex justify-center px-10 ">
+            <div className="container mx-auto flex justify-center px-10 cursor-pointer">
               <Image
                 src={'/img/pic2.jpg'}
                 alt="image"
@@ -76,8 +76,8 @@ const Home = () => {
 
       {/* how could you help*/}
       <div className=" min-h-[20rem] ">
-        <div className="flex justify-center pt-20">
-          <h1 className="capitalize text-3xl text-[#3a0ca3]">
+        <div className="flex justify-center pt-20 underline">
+          <h1 className="capitalize lg:text-3xl md:text-2xl text-[#3a0ca3]">
             how could you help?
           </h1>
         </div>
@@ -149,14 +149,14 @@ const Home = () => {
         </div>
       </div>
 
-      <div className=" min-h-[30rem] mb-10">
-        <div className="flex justify-center container mx-auto px-10 pt-10 ">
+      <div className=" min-h-[20rem] mb-10">
+        <div className="flex justify-center container mx-auto px-10 pt-10 cursor-pointer">
           <Image
             src={'/img/pic6.jpg'}
             alt="bg pic"
             height={'600'}
             width={600}
-            className="w-full h-full rounded-md lg:h-[50rem] "
+            className="w-full h-full rounded-md lg:h-[50rem] cursor-pointer"
           />
           {/*  <p className="">
               forget what you can get and see what you can give
@@ -173,7 +173,7 @@ const Home = () => {
 
       {/*upcoming event*/}
       <div className="min-h-[35rem] mb-5">
-        <div className="flex justify-center pt-5 lg:pt-[8rem] capitalize text-3xl text-[#3a0ca3]">
+        <div className="flex justify-center pt-5 lg:pt-[8rem] capitalize lg:text-3xl md:text-2xl underline text-[#3a0ca3]">
           <h1>upcoming events</h1>
         </div>
         <div className="flex justify-center container mx-auto px-5 pt-8">
@@ -186,7 +186,7 @@ const Home = () => {
         <div className="">
           <div className="mt-20 container mx-auto gap-10 grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2">
             <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
-              <div className="container mx-auto flex justify-center">
+              <div className="container mx-auto flex justify-center cursor-pointer">
                 <Image
                   src={'/img/pic9.jpg'}
                   alt={'event1'}
@@ -216,7 +216,7 @@ const Home = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 ">
-              <div className="container mx-auto flex justify-center">
+              <div className="container mx-auto flex justify-center cursor-pointer">
                 <Image
                   src="/img/pic9.jpg"
                   alt="dummy image"
