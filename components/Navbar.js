@@ -17,7 +17,7 @@ const Navbar = () => {
             />
           </Link>
 
-          <p className="capitalize flex items-center text-3xl text-[#1d3557]">
+          <p className="capitalize flex items-center lg:text-3xl md:text-2xl text-base text-[#1d3557]">
             <Link href={'/'}>insight group int.</Link>
           </p>
         </div>
