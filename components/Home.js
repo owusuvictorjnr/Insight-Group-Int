@@ -180,44 +180,79 @@ const Home = () => {
       </div>
 
       {/*upcoming event*/}
-      <div className="min-h-[35rem] bg-slate-500 mb-5">
-        <div className="flex justify-center pt-[8rem] capitalize text-3xl text-[#3a0ca3]">
+      <div className="min-h-[35rem] mb-5">
+        <div className="flex justify-center pt-5 lg:pt-[8rem] capitalize text-3xl text-[#3a0ca3]">
           <h1>upcoming events</h1>
         </div>
-        <div className="flex justify-center pt-8">
-          <p className="text-[#34a0a4] text-center text-sm">
-            Power modern applications with enriched querying capabilities,
-            <br />
-            new operators, added encryption features and more.
+        <div className="flex justify-center container mx-auto px-5 pt-8">
+          <p className="text-[#34a0a4] text-center text-sm lg:text-2xl md:text-2xl">
+            Power modern applications with enriched querying capabilities, new
+            operators, added encryption features and more.
           </p>
         </div>
 
-        <div className="mt-20 flex justify-between container mx-auto">
-          <div>
-            <div className="flex gap-5">
-              <Image
-                src={'/img/pic9.jpg'}
-                alt={'event1'}
-                height={250}
-                width={250}
-                className="rounded-xl mb-10"
-              />
-            </div>
-            <div className="grid md:grid-1">
-              <DateTime />
-              <h1 className="capitalize lg:text-2xl text-[#ffffff] pt-10 mx-5 flex flex-col">
-                today is a volunteers day
-              </h1>
+        <div className="">
+          <div className="mt-20 container mx-auto gap-10 grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2">
+            <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
+              <div className="container mx-auto flex justify-center">
+                <Image
+                  src={'/img/pic9.jpg'}
+                  alt={'event1'}
+                  height={300}
+                  width={300}
+                  className="rounded-xl mb-10"
+                />
+              </div>
+              <div className="container mx-auto flex flex-col text-center md:text-center ">
+                <div className="text-brightRed text-center lg:text-2xl md:text-2xl sm:text-center">
+                  <DateTime />
+                </div>
+                <div>
+                  <h1 className="capitalize lg:text-2xl text-darkBlue pt-2 ">
+                    today is a volunteers day
+                  </h1>
+                </div>
 
-              <p className="text-[#34a0a4] text-center text-sm">
-                Power modern applications with enriched querying capabilities,
-                <br />
-                new operators, added encryption features and more.
-              </p>
+                <div className="container mx-auto  ">
+                  <p className="text-[#34a0a4]  text-sm mb-5 mx-2">
+                    Power modern applications with enriched querying
+                    capabilities, new operators, added encryption features and
+                    more.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 ">
+              <div className="container mx-auto flex justify-center">
+                <Image
+                  src="/img/pic9.jpg"
+                  alt="dummy image"
+                  height={300}
+                  width={300}
+                  className="rounded-xl mb-10"
+                />
+              </div>
+              <div className="container mx-auto flex flex-col text-center md:text-center">
+                <div className="text-brightRed text-center lg:text-2xl md:text-2xl sm:text-center">
+                  <DateTime />
+                </div>
+                <div>
+                  <h1 className="capitalize lg:text-2xl text-darkBlue pt-2 ">
+                    today is a volunteers day
+                  </h1>
+                </div>
+
+                <div className="container mx-auto ">
+                  <p className="text-[#34a0a4]  text-sm mb-5 mx-2">
+                    Power modern applications with enriched querying
+                    capabilities, new operators, added encryption features and
+                    more.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-
-          <div>come</div>
         </div>
       </div>
     </div>
