@@ -17,7 +17,7 @@ const LandingPage = () => {
         alt="background image"
         height={500}
         width={500}
-        className="py-10 h-full w-screen px-5"
+        className="rounded-md  w-screen px-5"
       />
 
       <h1>welcome to insight group international</h1>
