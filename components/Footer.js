@@ -2,7 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import InstaFeed from './InstaFeed';
 import { FiSend } from 'react-icons/fi';
-import { SlSocialInstagram } from 'react-icons/sl';
+import { AiOutlineInstagram } from 'react-icons/ai';
 import { TfiLinkedin } from 'react-icons/tfi';
 import { FaFacebookF } from 'react-icons/fa';
 import dynamic from 'next/dynamic';
@@ -71,7 +71,7 @@ const Footer = () => {
               2018, he achieved the most prestigious
             </p>
 
-            <div className="flex  px-2 mx-2 pb-10">
+            <div className="flex justify-center pt-5 pb-10 container mx-auto">
               <input
                 text="email"
                 placeholder="Email Address"
@@ -88,33 +88,40 @@ const Footer = () => {
               instafeed
             </h1>
 
-            <div>
+            <div className="container mx-auto flex justify-center">
               <InstaFeed />
             </div>
           </div>
         </div>
 
-        <div className="w-full h-[0.04rem] bg-[#e9ecef]" />
+        <div className="w-full h-[0.04rem] bg-[#afd2f5]" />
 
-        <div className="pt-20 pb-10 text-[#727374] flex justify-between mx-20">
-          <p className="capitalize">
-            copyright &copy; 2023 all rights reserved | insight group
-            international
-            <div className="pb-10 text-center">read policy</div>
-          </p>
+        <div className="pt-20 pb-10 text-[#727374] flex justify-center container mx-auto ">
+          <div className="grid grid-cols-1 ">
+            <div className="container mx-auto justify-center text-center">
+              <p className="capitalize">
+                copyright &copy; 2023 all rights reserved | insight group
+                international
+              </p>
 
-          <div className="flex justify-between gap-5">
-            <Link href="/">
-              <SlSocialInstagram siyze={25} />
-            </Link>
+              <div className="pb-10 pt-5 cursor-pointer text-center capitalize">
+                read policy
+              </div>
+            </div>
 
-            <Link href="/">
-              <TfiLinkedin size={25} />
-            </Link>
+            <div className="flex justify-center container mx-auto gap-10">
+              <Link href="/">
+                <AiOutlineInstagram size={30} />
+              </Link>
 
-            <Link href="/">
-              <FaFacebookF size={25} />
-            </Link>
+              <Link href="/">
+                <TfiLinkedin size={25} />
+              </Link>
+
+              <Link href="/">
+                <FaFacebookF size={25} />
+              </Link>
+            </div>
           </div>
         </div>
 
