@@ -19,8 +19,6 @@ const LandingPage = () => {
         width={500}
         className="rounded-md  w-screen px-5"
       />
-
-      <h1>welcome to insight group international</h1>
     </div>
   );
 };
