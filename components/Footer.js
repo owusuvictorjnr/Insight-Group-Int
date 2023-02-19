@@ -12,15 +12,18 @@ const Footer = () => {
     <>
       <div className="bg-[#003049] min-h-[30rem]  ">
         <div className=" grid lg:grid-cols-4 md:grid-cols-2 md:gap-[5rem] lg:gap-[15rem] pt-[10rem] md:mx-[5rem] lg:mx[10rem] text-[#ffffff]   pb-5">
-          <div className="">
+          <div>
             <h1 className="underline font-bold  text-3xl capitalize flex justify-center">
               about agency
             </h1>
-            <p className="pt-10 text-[#727374]  pb-10  px-2 mx-2">
-              During his time in the Spanish capital, Modric has won a plethora
-              of trophies, which has included five Champions League titles. In
-              2018, he achieved the most prestigious
-            </p>
+
+            <div className="container mx-auto px-10 flex flex-col justify-center">
+              <p className="pt-10 text-[#727374]  pb-5">
+                During his time in the Spanish capital, Modric has won a
+                plethora of trophies, which has included five Champions League
+                titles. In 2018, he achieved the most prestigious
+              </p>
+            </div>
           </div>
 
           <div>
@@ -65,11 +68,13 @@ const Footer = () => {
               news letter
             </h1>
 
-            <p className="pt-10 text-[#727374]  pb-5  px-2 mx-2">
-              During his time in the Spanish capital, Modric has won a plethora
-              of trophies, which has included five Champions League titles. In
-              2018, he achieved the most prestigious
-            </p>
+            <div className="container mx-auto px-10 flex justify-center">
+              <p className="pt-10 text-[#727374]  pb-5 ">
+                During his time in the Spanish capital, Modric has won a
+                plethora of trophies, which has included five Champions League
+                titles. In 2018, he achieved the most prestigious
+              </p>
+            </div>
 
             <div className="flex justify-center pt-5 pb-10 container mx-auto">
               <input
