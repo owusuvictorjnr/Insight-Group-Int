@@ -6,7 +6,7 @@ import { CiTrophy } from 'react-icons/ci';
 import { BsPiggyBank } from 'react-icons/bs';
 import { FiDatabase } from 'react-icons/fi';
 import { SlDiamond } from 'react-icons/sl';
-import { GrGroup } from 'react-icons/gr';
+import { IoIosPeople } from 'react-icons/io';
 
 import Image from 'next/image';
 import DateTime from './Datetime';
@@ -14,69 +14,61 @@ import DateTime from './Datetime';
 const Home = () => {
   return (
     <div className=" w-screen bg-[#ffffff] flex flex-col">
-      <div className="min-h-[40rem]   mt-[5rem] flex justify-center ">
+      <div className="min-h-[40rem] mt-[3rem] w-full flex justify-center container mx-auto ">
         <LandingPage />
       </div>
 
-      {/*main card*/}
-      <div className="mt-10 min-h-[40rem]">
-        <div className="">
-          <div className="flex justify-evenly  ">
-            {/*welcome card */}
-            <div className="mt-[10rem]">
-              <div className="px-10 container mx-auto ">
-                <h1 className="capitalize text-3xl  text-[#3a0ca3] underline">
-                  welcome to insight group international
-                </h1>
+      {/*welcome card */}
+      <div className="min-h-[40rem] lg:mt-[10rem]">
+        <div className="flex justify-center container mx-auto">
+          <h1 className="text-[#3a0ca3] underline capitalize lg:text-3xl md:text-2xl">
+            welcome to insight group international
+          </h1>
+        </div>
+        <div className="pt-2 flex justify-center container mx-auto">
+          <p className="text-[#34a0a4] text-center px-5 lg:px-36 lg:text-3xl md:text-2xl ">
+            Power modern applications with enriched querying capabilities, new
+            operators, added encryption features and more.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-1">
+          {/*3 cards under welcome*/}
+          <div className="container mx-auto flex justify-center lg:items-center pt-20">
+            <div className="grid lg:grid-cols-3 md:grid-cols-3">
+              <div className="h-[11rem] w-60 m-5 border-2 py-10">
+                <FiDatabase size={30} color={'#76c893'} className="mx-5" />
+
+                <p className="mx-5 text-2xl font-bold pt-3">&#x20B5; 5.6</p>
+                <p className="py-2 text-sm mx-5 capitalize ">total donation</p>
               </div>
-              <p className="mt-10 container mx-auto px-5  lg:mx-20 lg:py-5 py-5 tracking-widest text-[#34a0a4]">
-                Power modern applications with enriched querying capabilities,
-                <br />
-                new operators, added encryption features and more.
-              </p>
 
-              {/*3 cards under welcome*/}
-              <div className="grid lg:grid-cols-3 md:grid-cols-2 m-5  mb-5 ">
-                <div className="h-40 w-40 m-5 border-2 py-10  ">
-                  <FiDatabase size={30} color={'#76c893'} className="mx-5" />
-
-                  <p className="mx-5 text-2xl font-bold pt-3">&#x20B5; 5.6</p>
-                  <p className="py-2 text-sm mx-5 capitalize ">
-                    total donation
-                  </p>
-                </div>
-
-                <div className="h-40 w-40 m-5 border-2 py-10  ">
-                  <SlDiamond size={30} color={'#76c893'} className="mx-5" />
-                  <p className="mx-5 text-2xl font-bold pt-3">4284</p>
-                  <p className="py-2 text-sm mx-5 capitalize ">
-                    total projects
-                  </p>
-                </div>
-
-                <div className="h-40 w-40 m-5 border-2 py-10  ">
-                  <GrGroup size={30} color={'#76c893'} className="mx-5" />
-                  <p className="mx-5 text-2xl font-bold pt-3">300</p>
-                  <p className="py-2 text-sm mx-5 capitalize ">
-                    total volunteers
-                  </p>
-                </div>
+              <div className="h-[11rem] w-60 m-5 border-2 py-10  ">
+                <SlDiamond size={30} color={'#76c893'} className="mx-5" />
+                <p className="mx-5 text-2xl font-bold pt-3">4284</p>
+                <p className="py-2 text-sm mx-5 capitalize ">total projects</p>
               </div>
-            </div>
 
-            {/*right image card*/}
-            <div className="mt-[10rem] h-full bg-red-500  ">
-              <div className="container mx-auto text-center">
-                <p className="text-end">
-                  <Image
-                    src={'/img/pic2.jpg'}
-                    alt="image"
-                    height={500}
-                    width={500}
-                    className="w-full h-full "
-                  />
+              <div className="h-[11rem] w-60 m-5 border-2 py-10  ">
+                <IoIosPeople size={30} color={'#76c893'} className="mx-5" />
+                <p className="mx-5 text-2xl font-bold pt-3">300</p>
+                <p className="py-2 text-sm mx-5 capitalize ">
+                  total volunteers
                 </p>
               </div>
+            </div>
+          </div>
+
+          {/*right image card*/}
+          <div className="container mx-auto pt-20">
+            <div className="container mx-auto flex justify-center px-10 ">
+              <Image
+                src={'/img/pic2.jpg'}
+                alt="image"
+                height={500}
+                width={500}
+                className="rounded-xl md:w-full"
+              />
             </div>
           </div>
         </div>
@@ -93,13 +85,13 @@ const Home = () => {
           <div className="grid  md:grid-cols-2 gap-8">
             <div className="lg:w-[30rem] w-[25rem] h-[15rem] bg-[#f1faee]  rounded-md mb-5 container mx-auto ">
               <div className="flex justify-center capitalize">
-                <h2 className="flex justify-center pt-10 gap-3 text-2xl text-[#34a0a4]">
+                <h2 className="flex justify-center container mx-auto pt-10 gap-3 text-2xl text-[#34a0a4]">
                   <RiHandHeartLine size={30} color={'#76c893'} />
                   give donation
                 </h2>
               </div>
               <div className="pt-10 container mx-auto flex items-center">
-                <p className="mx-5 text-sm text-darkBlue">
+                <p className="container mx-auto px-20 text-sm text-darkBlue">
                   Power modern applications with enriched querying capabilities,
                   new operators, added encryption features and more.
                 </p>
@@ -108,13 +100,13 @@ const Home = () => {
 
             <div className="lg:w-[30rem] w-[25rem]  h-[15rem] bg-[#f1faee]  rounded-md mb-5 container mx-auto">
               <div className="flex justify-center capitalize">
-                <h2 className="flex justify-center pt-10 gap-3 text-2xl text-[#34a0a4]">
+                <h2 className="flex justify-center container mx-auto px-10 pt-10 gap-3 text-2xl text-[#34a0a4]">
                   <IoRibbonOutline size={30} color={'#76c893'} />
                   become a volunteer
                 </h2>
               </div>
               <div className="pt-10 container mx-auto flex items-center">
-                <p className="mx-5 text-sm text-darkBlue">
+                <p className="container mx-auto px-20  text-sm text-darkBlue">
                   Power modern applications with enriched querying capabilities,
                   new operators, added encryption features and more.
                 </p>
@@ -127,13 +119,13 @@ const Home = () => {
           <div className="grid  md:grid-cols-2 gap-8">
             <div className="w-[25rem] lg:w-[30rem] h-[15rem] bg-[#f1faee]  rounded-md mb-5 container mx-auto ">
               <div className="flex justify-center capitalize">
-                <h2 className="flex justify-center pt-10 gap-3 text-2xl text-[#34a0a4]">
+                <h2 className="flex justify-center container mx-auto pt-10 gap-3 text-2xl text-[#34a0a4]">
                   <CiTrophy size={30} color={'#76c893'} />
                   child education
                 </h2>
               </div>
               <div className="pt-10 container mx-auto flex items-center">
-                <p className="mx-5 text-sm text-darkBlue">
+                <p className="container mx-auto px-20  text-sm text-darkBlue">
                   Power modern applications with enriched querying capabilities,
                   new operators, added encryption features and more.
                 </p>
@@ -142,12 +134,12 @@ const Home = () => {
 
             <div className="w-[25rem] lg:w-[30rem] h-[15rem] bg-[#f1faee]  rounded-md mb-5 container mx-auto">
               <div className="flex justify-center capitalize">
-                <h2 className="flex justify-center pt-10 gap-3 text-2xl text-[#34a0a4]">
+                <h2 className="flex justify-center container mx-auto pt-10 gap-3 text-2xl text-[#34a0a4]">
                   <BsPiggyBank size={30} color={'#76c893'} /> quick fundraise
                 </h2>
               </div>
               <div className="pt-10 container mx-auto flex items-center">
-                <p className="mx-5 text-sm text-darkBlue">
+                <p className="container mx-auto px-20  text-sm text-darkBlue">
                   Power modern applications with enriched querying capabilities,
                   new operators, added encryption features and more.
                 </p>
@@ -158,13 +150,13 @@ const Home = () => {
       </div>
 
       <div className=" min-h-[30rem] mb-10">
-        <div className="flex justify-center px-10 pt-10 ">
+        <div className="flex justify-center container mx-auto px-10 pt-10 ">
           <Image
             src={'/img/pic6.jpg'}
             alt="bg pic"
             height={'600'}
             width={600}
-            className="bg-white w-full h-full rounded-md lg:h-[40rem] "
+            className="w-full h-full rounded-md lg:h-[50rem] "
           />
           {/*  <p className="">
               forget what you can get and see what you can give
@@ -185,7 +177,7 @@ const Home = () => {
           <h1>upcoming events</h1>
         </div>
         <div className="flex justify-center container mx-auto px-5 pt-8">
-          <p className="text-[#34a0a4] text-center text-sm lg:text-2xl md:text-2xl">
+          <p className="text-[#34a0a4] text-center  lg:px-36 lg:text-3xl md:text-2xl">
             Power modern applications with enriched querying capabilities, new
             operators, added encryption features and more.
           </p>
