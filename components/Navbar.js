@@ -11,9 +11,9 @@ const Navbar = () => {
             <Image
               src="/logo/logo1.jpg"
               alt="logo1"
-              width={'100'}
-              height={'100'}
-              className="rounded-full "
+              width={'50'}
+              height={'50'}
+              className="rounded-full lg:h-28 lg:w-28 md:h-20 md:w-20 h-12 w-12 "
             />
           </Link>
 
