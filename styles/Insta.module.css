@@ -1,0 +1,30 @@
+instagram {
+  @apply relative
+  @apply before:content-[attr(data-tip)]
+  @apply before:absolute
+  @apply before:px-3 before:py-2
+  @apply before:left-1/2 before:-top-3
+  @apply before:w-max before:max-w-sm
+  @apply before:-translate-x-1/2 before:-translate-y-full
+  @apply before:bg-gray-700 before:text-white
+  @apply before:rounded-md before:opacity-0
+  @apply before:transition-all
+
+        
+
+
+  @apply after:absolute
+  @apply after:left-1/2 after:-top-3
+  @apply after:h-0 after:w-0
+  @apply after:-translate-x-1/2 after:border-8
+  @apply after:border-t-gray-700
+  @apply after:border-1-transparent
+  @apply after:border-b-transparent
+  @apply after:border-r-transparent
+  @apply after:opacity-0
+  @apply after:transition-all
+
+
+
+  @apply hover:before:opacity-100 hover:after:opacity-100;
+}
