@@ -9,6 +9,7 @@ import {
 import { TfiLinkedin } from 'react-icons/tfi';
 import { FaFacebookF } from 'react-icons/fa';
 
+
 const Navbar = () => {
   const [nav, setNav] = useState(false);
 
@@ -64,8 +65,8 @@ const Navbar = () => {
           </div>
         </div>
         {/*Small screen navbar*/}
-        <div onClick={handleNav} className="flex items-center md:hidden">
-          <AiOutlineMenu size={25} className="" />
+        <div onClick={handleNav} className="flex items-center  md:hidden">
+          <AiOutlineMenu size={25} className="cursor-pointer" />
         </div>
       </div>
 
@@ -98,7 +99,7 @@ const Navbar = () => {
                 onClick={handleNav}
                 className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
               >
-                <AiOutlineClose size={25} />
+                <AiOutlineClose size={20} />
               </div>
             </div>
             <div className="border-b border-gray-300 my-4 container mx-auto flex justify-center">
@@ -110,7 +111,7 @@ const Navbar = () => {
 
           <div className="py-4 flex flex-col text-brightRed text-sm">
             <ul className="capitalize">
-              <Link href={'/home'}>
+              <Link href={'/'}>
                 <li className="py-4 ">home</li>
               </Link>
 
@@ -133,27 +134,149 @@ const Navbar = () => {
             </p>
           </div>
 
-          <div className="flex justify-center container mx-auto gap-20 pt-10 text-darkGrayishBlue">
-            <Link
-              href="/"
-              className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 "
-            >
-              <AiOutlineInstagram size={30} />
-            </Link>
+          <div className="flex justify-center container mx-auto gap-10 pt-20 text-darkGrayishBlue">
+            <div
+              className="
+        
+                relative
+                before:content-[attr(data-tip)]
+                before:absolute
+                before:px-3 before:py-2
+                before:left-1/2 before:-top-3
+                before:w-max before:max-w-sm
+                before:-translate-x-1/2 before:-translate-y-full
+                before:bg-gray-700 before:text-white
+                before:rounded-md before:opacity-0
+                before:transition-all
 
-            <Link
-              href="/"
-              className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 "
-            >
-              <TfiLinkedin size={25} />
-            </Link>
+                
 
+
+                after:absolute
+                after:left-1/2 after:-top-3
+                after:h-0 after:w-0
+                after:-translate-x-1/2 after:border-8
+                after:border-t-gray-700
+                after:border-1-transparent
+                after:border-b-transparent
+                after:border-r-transparent
+                after:opacity-0
+                after:transition-all
+
+
+
+                hover:before:opacity-100 hover:after:opacity-100
+                "
+              data-tip="Instagram"
+            >
+              <button
+                type=""
+                className="rounded-full shadow-lg shadow-gray-400 py-4 px-4 cursor-pointer hover:scale-105 ease-in duration-300"
+              >
+                <Link href="/">
+                  <AiOutlineInstagram size={30} />
+                </Link>
+              </button>
+            </div>
+
+            <div
+              className="
+        
+                relative
+                before:content-[attr(data-tip)]
+                before:absolute
+                before:px-3 before:py-2
+                before:left-1/2 before:-top-3
+                before:w-max before:max-w-sm
+                before:-translate-x-1/2 before:-translate-y-full
+                before:bg-gray-700 before:text-white
+                before:rounded-md before:opacity-0
+                before:transition-all
+
+                
+
+
+                after:absolute
+                after:left-1/2 after:-top-3
+                after:h-0 after:w-0
+                after:-translate-x-1/2 after:border-8
+                after:border-t-gray-700
+                after:border-1-transparent
+                after:border-b-transparent
+                after:border-r-transparent
+                after:opacity-0
+                after:transition-all
+
+
+
+                hover:before:opacity-100 hover:after:opacity-100
+        "
+              data-tip="LinkedIn"
+            >
+              <button
+                type=""
+                className="rounded-full shadow-lg shadow-gray-400 py-4 px-4 cursor-pointer hover:scale-105 ease-in duration-300"
+              >
+                <Link href="/">
+                  <TfiLinkedin size={25} />
+                </Link>
+              </button>
+            </div>
+
+            <div
+              className="
+        
+                relative
+                before:content-[attr(data-tip)]
+                before:absolute
+                before:px-3 before:py-2
+                before:left-1/2 before:-top-3
+                before:w-max before:max-w-sm
+                before:-translate-x-1/2 before:-translate-y-full
+                before:bg-gray-700 before:text-white
+                before:rounded-md before:opacity-0
+                before:transition-all
+
+                
+
+
+                after:absolute
+                after:left-1/2 after:-top-3
+                after:h-0 after:w-0
+                after:-translate-x-1/2 after:border-8
+                after:border-t-gray-700
+                after:border-1-transparent
+                after:border-b-transparent
+                after:border-r-transparent
+                after:opacity-0
+                after:transition-all
+
+
+
+                hover:before:opacity-100 hover:after:opacity-100
+        "
+              data-tip="Facebook"
+            >
+              <button
+                type=""
+                className="rounded-full shadow-lg shadow-gray-400 py-4 px-4 cursor-pointer hover:scale-105 ease-in duration-300"
+              >
+                <Link href="/">
+                  <FaFacebookF size={25} />
+                </Link>
+              </button>
+            </div>
+
+            {/*
+          
+            
             <Link
               href="/"
               className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300 "
             >
               <FaFacebookF size={25} />
             </Link>
+          */}
           </div>
         </div>
       </div>
