@@ -114,22 +114,182 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="flex justify-center container mx-auto gap-10">
-              <Link href="/">
-                <AiOutlineInstagram size={30} />
-              </Link>
+            <div className="flex justify-center container mx-auto gap-10 pt-10">
+              <div
+                className="
+        
+                relative
+                before:content-[attr(data-tip)]
+                before:absolute
+                before:px-3 before:py-2
+                before:left-1/2 before:-top-3
+                before:w-max before:max-w-sm
+                before:-translate-x-1/2 before:-translate-y-full
+                before:bg-gray-700 before:text-white
+                before:rounded-md before:opacity-0
+                before:transition-all
 
-              <Link href="/">
-                <TfiLinkedin size={25} />
-              </Link>
+                
 
-              <Link href="/">
-                <FaFacebookF size={25} />
-              </Link>
 
-              <Link href="/">
-                <AiOutlineMail size={25} />
-              </Link>
+                after:absolute
+                after:left-1/2 after:-top-3
+                after:h-0 after:w-0
+                after:-translate-x-1/2 after:border-8
+                after:border-t-gray-700
+                after:border-1-transparent
+                after:border-b-transparent
+                after:border-r-transparent
+                after:opacity-0
+                after:transition-all
+
+
+
+                hover:before:opacity-100 hover:after:opacity-100
+        "
+                data-tip="Instagram"
+              >
+                <button
+                  type=""
+                  className="rounded-full   px-4 cursor-pointer hover:scale-105 ease-in duration-300"
+                >
+                  <Link href="/">
+                    <AiOutlineInstagram size={30} />
+                  </Link>
+                </button>
+              </div>
+
+              <div
+                className="
+        
+                relative
+                before:content-[attr(data-tip)]
+                before:absolute
+                before:px-3 before:py-2
+                before:left-1/2 before:-top-3
+                before:w-max before:max-w-sm
+                before:-translate-x-1/2 before:-translate-y-full
+                before:bg-gray-700 before:text-white
+                before:rounded-md before:opacity-0
+                before:transition-all
+
+                
+
+
+                after:absolute
+                after:left-1/2 after:-top-3
+                after:h-0 after:w-0
+                after:-translate-x-1/2 after:border-8
+                after:border-t-gray-700
+                after:border-1-transparent
+                after:border-b-transparent
+                after:border-r-transparent
+                after:opacity-0
+                after:transition-all
+
+
+
+                hover:before:opacity-100 hover:after:opacity-100
+        "
+                data-tip="LinkedIn"
+              >
+                <button
+                  type=""
+                  className="rounded-full  cursor-pointer hover:scale-105 ease-in duration-300"
+                >
+                  <Link href="/">
+                    <TfiLinkedin size={25} />
+                  </Link>
+                </button>
+              </div>
+
+              <div
+                className="
+        
+                relative
+                before:content-[attr(data-tip)]
+                before:absolute
+                before:px-3 before:py-2
+                before:left-1/2 before:-top-3
+                before:w-max before:max-w-sm
+                before:-translate-x-1/2 before:-translate-y-full
+                before:bg-gray-700 before:text-white
+                before:rounded-md before:opacity-0
+                before:transition-all
+
+                
+
+
+                after:absolute
+                after:left-1/2 after:-top-3
+                after:h-0 after:w-0
+                after:-translate-x-1/2 after:border-8
+                after:border-t-gray-700
+                after:border-1-transparent
+                after:border-b-transparent
+                after:border-r-transparent
+                after:opacity-0
+                after:transition-all
+
+
+
+                hover:before:opacity-100 hover:after:opacity-100
+        "
+                data-tip="Facebook"
+              >
+                <button
+                  type=""
+                  className="rounded-full  cursor-pointer hover:scale-105 ease-in duration-300"
+                >
+                  <Link href="/">
+                    <FaFacebookF size={25} />
+                  </Link>
+                </button>
+              </div>
+
+              <div
+                className="
+        
+                relative
+                before:content-[attr(data-tip)]
+                before:absolute
+                before:px-3 before:py-2
+                before:left-1/2 before:-top-3
+                before:w-max before:max-w-sm
+                before:-translate-x-1/2 before:-translate-y-full
+                before:bg-gray-700 before:text-white
+                before:rounded-md before:opacity-0
+                before:transition-all
+
+                
+
+
+                after:absolute
+                after:left-1/2 after:-top-3
+                after:h-0 after:w-0
+                after:-translate-x-1/2 after:border-8
+                after:border-t-gray-700
+                after:border-1-transparent
+                after:border-b-transparent
+                after:border-r-transparent
+                after:opacity-0
+                after:transition-all
+
+
+
+                hover:before:opacity-100 hover:after:opacity-100
+        "
+                data-tip="Mail"
+              >
+                <button
+                  type=""
+                  className="rounded-full  cursor-pointer hover:scale-105 ease-in duration-300"
+                >
+                  <Link href="/">
+                    <AiOutlineMail size={25} />
+                  </Link>
+                </button>
+              </div>
             </div>
           </div>
         </div>
