@@ -2,7 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import InstaFeed from './InstaFeed';
 import { FiSend } from 'react-icons/fi';
-import { AiOutlineInstagram } from 'react-icons/ai';
+import { AiOutlineInstagram, AiOutlineMail } from 'react-icons/ai';
 import { TfiLinkedin } from 'react-icons/tfi';
 import { FaFacebookF } from 'react-icons/fa';
 import dynamic from 'next/dynamic';
@@ -125,6 +125,10 @@ const Footer = () => {
 
               <Link href="/">
                 <FaFacebookF size={25} />
+              </Link>
+
+              <Link href="/">
+                <AiOutlineMail size={25} />
               </Link>
             </div>
           </div>
