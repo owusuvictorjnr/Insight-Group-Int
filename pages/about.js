@@ -26,8 +26,8 @@ const About = () => {
         </div>
 
         {/*Mission*/}
-        <div className="min-h-[30rem] grid grid-cols-1 md:grid-cols-2">
-          <div className="flex justify-center rounded-t-xl container mx-auto pt-10">
+        <div className="min-h-[30rem] grid grid-cols-1 md:grid-cols-2 lg:container lg:px-10 pt-20">
+          <div className="flex justify-center rounded-t-xl container mx-auto pt-10 shadow-2xl md:mx-3 lg:py-5">
             <Image
               src={'/img/pic9.jpg'}
               alt="/"
@@ -50,7 +50,7 @@ const About = () => {
           </div>
         </div>
         <div className="pt-10 pb-10 grid grid-cols-1 md:grid-cols-2">
-          <p className="container mx-auto flex justify-center px-10 text-darkBlue md:text-xl lg:text-3xl">
+          <p className="container mx-auto flex pt-5 justify-center px-10 text-darkBlue md:text-xl lg:text-3xl">
             As a heart-centered brand that cares about its global impact, Iya
             Foods emphasizes that key part of its brand in its mission
             statement. Describing your brand values and what you stand for is
@@ -61,7 +61,7 @@ const About = () => {
             it`s been featured in, giving it plenty of credibility.
           </p>
 
-          <div className="container mx-auto flex justify-center md:items-center pt-5">
+          <div className="container mx-auto flex justify-center shadow-2xl py-5 mt-5  md:items-center md:mx-3 ">
             <Image
               src={'/img/pic1.jpg'}
               alt="/"
@@ -74,13 +74,13 @@ const About = () => {
 
         {/*Our impact*/}
         <div className="pt-10 mb-10 grid grid-cols-1 md:grid-cols-2">
-          <div className="container m-auto flex justify-center ">
+          <div className="container m-auto flex justify-center shadow-2xl py-5 mt-5 md:px-3">
             <Image
               src={'/img/pic6.jpg'}
               alt={'/'}
               width="300"
               height="300"
-              className="rounded-l-[4rem] md:rounded-l-[4rem] w-[24rem] h-[13rem] md:w-full md:h-[20rem] md:px-3 llg:w-[45rem] lg:h-[30rem] lg:px-5"
+              className="rounded-l-[4rem] md:rounded-l-[4rem] w-[24rem] h-[13rem] md:w-full md:h-[20rem] md:px-3 lg:w-[45rem] lg:h-[30rem] lg:px-5"
             />
           </div>
           <div className="flex flex-col items-center justify-center container mx-auto pt-3">
