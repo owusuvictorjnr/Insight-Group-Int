@@ -18,8 +18,8 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-veryLightGray h-36 items-center flex top-0 z-20 left-0 right-0 fixed border shadow-lg  ">
-      <div className="flex justify-evenly  w-full">
+    <div className="bg-veryLightGray h-26 items-center flex top-0 z-20 left-0 right-0 fixed border shadow-lg  ">
+      <div className="flex justify-between px-10 w-full">
         <div className="flex gap-5">
           <Link href={'/'}>
             <Image
@@ -27,39 +27,41 @@ const Navbar = () => {
               alt="logo1"
               width={'50'}
               height={'50'}
-              className="rounded-full lg:h-28 lg:w-28 md:h-20 md:w-20 h-12 w-12 "
+              className="rounded-full lg:h-18 lg:w-18 md:h-16 md:w-16 h-12 w-12 "
             />
           </Link>
 
-          <p className="capitalize flex items-center lg:text-3xl md:text-2xl text-base text-[#1d3557]">
-            <Link href={'/'}>insight group int.</Link>
+          <p className="capitalize flex items-center justify-center lg:text-3xl md:text-2xl text-base text-[#1d3557] ">
+            <Link href={'/'}>
+              <p className="text-center">insight group int.</p>
+            </Link>
           </p>
         </div>
 
         {/*Large screen navbar*/}
         <div className="md:flex hidden">
-          <div className="flex items-center gap-10 lg:gap-20 capitalize text-2xl">
-            <Link href={'/'} className="">
-              <ul className="cursor-pointer py-2 px-2  hover:bg-brightRedLight rounded-xl hover:text-brightRedSupLight text-white bg-brightRed hover:underline duration-500  md:block">
-                <li>home</li>
+          <div className="flex items-center justify-between gap-5 lg:gap-10 capitalize text-2xl">
+            <Link href={'/'} className="cursor-pointer">
+              <ul className=" py-2 px-2  hover:bg-brightRedLight rounded-xl hover:text-brightRedSupLight text-white bg-brightRed hover:underline duration-500  md:block">
+                <li className="text-sm md:text-xl lg:text-2xl">home</li>
               </ul>
             </Link>
 
-            <Link href={'/about'}>
-              <ul className="cursor-pointer py-2 px-2  hover:bg-brightRedLight rounded-xl hover:text-brightRedSupLight text-white bg-brightRed hover:underline duration-500  md:block">
-                <li>about</li>
+            <Link href={'/about'} className="cursor-pointer">
+              <ul className="py-2 px-2  hover:bg-brightRedLight rounded-xl hover:text-brightRedSupLight text-white bg-brightRed hover:underline duration-500  md:block">
+                <li className="text-sm md:text-xl lg:text-2xl">about</li>
               </ul>
             </Link>
 
-            <Link href={'/contact'}>
-              <ul className="cursor-pointer py-2 px-2  hover:bg-brightRedLight rounded-xl hover:text-brightRedSupLight text-white bg-brightRed hover:underline duration-500  md:block  ">
-                <li>contact</li>
+            <Link href={'/contact'} className="cursor-pointer">
+              <ul className="py-2 px-2  hover:bg-brightRedLight rounded-xl hover:text-brightRedSupLight text-white bg-brightRed hover:underline duration-500  md:block  ">
+                <li className="text-sm md:text-xl lg:text-2xl">contact</li>
               </ul>
             </Link>
 
-            <Link href={'/sponsors'}>
-              <ul className="cursor-pointer py-2 px-2  hover:bg-brightRedLight rounded-xl hover:text-brightRedSupLight text-white bg-brightRed hover:underline duration-500  md:block ">
-                <li>sponsors</li>
+            <Link href={'/sponsors'} className="cursor-pointer ">
+              <ul className="py-2 px-2  hover:bg-brightRedLight rounded-xl hover:text-brightRedSupLight text-white bg-brightRed hover:underline duration-500  md:block ">
+                <li className="text-sm md:text-xl lg:text-2xl">sponsors</li>
               </ul>
             </Link>
           </div>
@@ -89,10 +91,12 @@ const Navbar = () => {
                 alt="side logo"
                 width={50}
                 height={50}
-                className="rounded-full h-16 w-16"
+                className="rounded-full h-12 w-12"
               />
-              <div>
-                <h1 className="capitalize text-sm">insight group int.</h1>
+              <div className="flex justify-center">
+                <h1 className="capitalize text-sm text-center text-darkBlue">
+                  insight group int.
+                </h1>
               </div>
 
               <div
@@ -103,7 +107,7 @@ const Navbar = () => {
               </div>
             </div>
             <div className="border-b border-gray-300 my-4 container mx-auto flex justify-center">
-              <p className="w-[85%] md:w-[90%] py-4 text-sm">
+              <p className="w-[85%] md:w-[90%] py-4 text-sm text-blue-800">
                 Power modern applications with enriched
               </p>
             </div>
