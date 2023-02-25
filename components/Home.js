@@ -14,7 +14,7 @@ import DateTime from './Datetime';
 const Home = () => {
   return (
     <div className=" w-screen bg-[#ffffff] flex flex-col">
-      <div className="min-h-[20rem] mt-[10rem] w-full flex justify-center container mx-auto ">
+      <div className="min-h-[20rem] mt-[5rem] w-full flex justify-center  mx-auto">
         <LandingPage />
       </div>
 
@@ -36,20 +36,20 @@ const Home = () => {
           {/*3 cards under welcome*/}
           <div className="container mx-auto flex justify-center lg:items-center pt-20">
             <div className="grid lg:grid-cols-3 md:grid-cols-3">
-              <div className="h-[11rem] w-60 m-5 border-2 py-10">
+              <div className="h-[11rem] w-60 m-5 border-2 py-10 shadow-2xl">
                 <FiDatabase size={30} color={'#76c893'} className="mx-5" />
 
                 <p className="mx-5 text-2xl font-bold pt-3">&#x20B5; 5.6</p>
                 <p className="py-2 text-sm mx-5 capitalize ">total donation</p>
               </div>
 
-              <div className="h-[11rem] w-60 m-5 border-2 py-10  ">
+              <div className="h-[11rem] w-60 m-5 border-2 py-10  shadow-2xl">
                 <SlDiamond size={30} color={'#76c893'} className="mx-5" />
                 <p className="mx-5 text-2xl font-bold pt-3">4284</p>
                 <p className="py-2 text-sm mx-5 capitalize ">total projects</p>
               </div>
 
-              <div className="h-[11rem] w-60 m-5 border-2 py-10  ">
+              <div className="h-[11rem] w-60 m-5 border-2 py-10  shadow-2xl">
                 <IoIosPeople size={30} color={'#76c893'} className="mx-5" />
                 <p className="mx-5 text-2xl font-bold pt-3">300</p>
                 <p className="py-2 text-sm mx-5 capitalize ">
@@ -81,9 +81,9 @@ const Home = () => {
             how could you help?
           </h1>
         </div>
-        <div className=" px-10 pt-[5rem] flex justify-center items-center">
+        <div className=" px-10 pt-[3rem] flex justify-center items-center">
           <div className="grid  md:grid-cols-2 gap-8">
-            <div className="lg:w-[30rem] w-[25rem] h-[15rem] bg-[#f1faee]  rounded-md mb-5 container mx-auto ">
+            <div className="lg:w-[30rem] w-[25rem] h-[15rem] bg-[#f1faee]  rounded-md mb-5 container mx-auto shadow-2xl">
               <div className="flex justify-center capitalize">
                 <h2 className="flex justify-center container mx-auto pt-10 gap-3 text-2xl text-[#34a0a4]">
                   <RiHandHeartLine size={30} color={'#76c893'} />
@@ -98,7 +98,7 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="lg:w-[30rem] w-[25rem]  h-[15rem] bg-[#f1faee]  rounded-md mb-5 container mx-auto">
+            <div className="lg:w-[30rem] w-[25rem]  h-[15rem] bg-[#f1faee]  rounded-md mb-5 container mx-auto shadow-2xl">
               <div className="flex justify-center capitalize">
                 <h2 className="flex justify-center container mx-auto px-10 pt-10 gap-3 text-2xl text-[#34a0a4]">
                   <IoRibbonOutline size={30} color={'#76c893'} />
@@ -117,7 +117,7 @@ const Home = () => {
 
         <div className="px-10  flex justify-center">
           <div className="grid  md:grid-cols-2 gap-8">
-            <div className="w-[25rem] lg:w-[30rem] h-[15rem] bg-[#f1faee]  rounded-md mb-5 container mx-auto ">
+            <div className="w-[25rem] lg:w-[30rem] h-[15rem] bg-[#f1faee]  rounded-md mb-5 container mx-auto shadow-2xl">
               <div className="flex justify-center capitalize">
                 <h2 className="flex justify-center container mx-auto pt-10 gap-3 text-2xl text-[#34a0a4]">
                   <CiTrophy size={30} color={'#76c893'} />
@@ -132,7 +132,7 @@ const Home = () => {
               </div>{' '}
             </div>
 
-            <div className="w-[25rem] lg:w-[30rem] h-[15rem] bg-[#f1faee]  rounded-md mb-5 container mx-auto">
+            <div className="w-[25rem] lg:w-[30rem] h-[15rem] bg-[#f1faee]  rounded-md mb-5 container mx-auto shadow-2xl">
               <div className="flex justify-center capitalize">
                 <h2 className="flex justify-center container mx-auto pt-10 gap-3 text-2xl text-[#34a0a4]">
                   <BsPiggyBank size={30} color={'#76c893'} /> quick fundraise
