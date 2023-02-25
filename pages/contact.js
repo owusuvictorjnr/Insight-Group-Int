@@ -2,6 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import { SiGooglemaps } from 'react-icons/si';
 
 const Contact = () => {
   return (
@@ -11,15 +12,15 @@ const Contact = () => {
         <title>IG contact</title>
       </Head>
       <div className="min-h-screen">
-        <div className="pt-[10rem] bg-brightRedSupLight flex justify-center pb-5 ">
+        <div className="pt-[10rem] bg-brightRedSupLight flex justify-center pb-5">
           <p className="capitalize text-sm lg:text-3xl md:text-2xl text-brightRedLight font-bold  underline pb-5">
             contact us
           </p>
         </div>
 
-        <div className="pt-36 mx-10 md:gap-[30rem] grid grid-cols-1 md:grid-cols-2">
+        <div className="pt-36 mx-10 lg:gap-[15rem] grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
           {/* send us a message*/}
-          <div className="bg-darkBlue rounded-md min-h-[20rem] shadow-md shadow-darkGrayishBlue  border-4 border-gray-100 pb-6  md:w-[40rem] md:h-[30rem] lg:w-[60rem]">
+          <div className="bg-darkBlue rounded-md min-h-[30rem] shadow-md shadow-darkGrayishBlue  border-4 border-gray-100 pb-6  md:w-[40rem] md:h-[30rem] lg:w-[60rem] flex md:justify-center">
             <div className="flex flex-col container mx-auto ">
               <h1 className="uppercase pt-20 py-5 text-sm md:text-2xl lg:text-3xl text-brightRedLight text-center">
                 send us a message
@@ -52,10 +53,10 @@ const Contact = () => {
                   />
                 </div>
               </div>
-              <div className="flex justify-center">
+              <div className="flex justify-center mb-10">
                 <button
                   type="submit"
-                  className="bg-white capitalize text-sm text-darkBlue px-10 py-2 rounded-md hover:bg-brightRedLight duration-300"
+                  className="bg-white capitalize text-sm text-darkBlue px-10 py-2 rounded-md hover:bg-brightRedLight duration-300 lg:text-2xl md:text-xl"
                 >
                   send
                 </button>
@@ -64,7 +65,14 @@ const Contact = () => {
           </div>
 
           {/* contact*/}
-          <div>contact</div>
+          <div className="bg-[#000814] mt-10 container mx-auto flex justify-center">
+            <div>
+              <h1>contact information</h1>
+            </div>
+            <div>
+              <SiGooglemaps size={'20'} />
+            </div>
+          </div>
         </div>
       </div>
       <Footer />
