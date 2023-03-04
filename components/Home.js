@@ -7,6 +7,7 @@ import { BsPiggyBank } from 'react-icons/bs';
 import { FiDatabase } from 'react-icons/fi';
 import { SlDiamond } from 'react-icons/sl';
 import { IoIosPeople } from 'react-icons/io';
+import dynamic from 'next/dynamic';
 
 import Image from 'next/image';
 import DateTime from './Datetime';
@@ -251,4 +252,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default dynamic(() => Promise.resolve(Home), { ssr: false });
