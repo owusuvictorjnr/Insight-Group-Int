@@ -27,7 +27,7 @@ const About = () => {
 
         {/*Mission*/}
         <div className="min-h-[30rem] grid grid-cols-1 md:grid-cols-2 lg:container lg:px-10 pt-20">
-          <div className="flex justify-center rounded-t-xl container mx-auto pt-10 shadow-2xl md:mx-3 lg:py-5">
+          <div className="flex justify-center rounded-t-xl container mx-auto pt-10  md:mx-3 lg:py-5">
             <Image
               src={'/img/pic9.jpg'}
               alt="/"
@@ -74,7 +74,7 @@ const About = () => {
 
         {/*Our impact*/}
         <div className="pt-10 mb-10 grid grid-cols-1 md:grid-cols-2">
-          <div className="container m-auto flex justify-center shadow-2xl py-5 mt-5 md:px-3">
+          <div className="container m-auto flex justify-center shadow py-5 mt-5 md:px-3">
             <Image
               src={'/img/pic6.jpg'}
               alt={'/'}
