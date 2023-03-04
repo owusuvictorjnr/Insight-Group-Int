@@ -21,7 +21,7 @@ const Contact = () => {
 
         <div className="pt-36 mx-10 lg:gap-[15rem] grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
           {/* send us a message*/}
-          <div className="bg-darkBlue rounded-md min-h-[35rem] shadow-md shadow-darkGrayishBlue  border-4 border-gray-100 mb-10  md:w-[40rem] md:h-[30rem] lg:w-[60rem] flex md:justify-center">
+          <div className="bg-darkBlue rounded-md  container mx-auto shadow-darkGrayishBlue  border-4 border-gray-100 mb-10  md:w-[40rem] md:h-[30rem] lg:w-[60rem] min-h-[40rem] md:min-h-[50rem] lg:min-h-[55rem]">
             <div className="flex flex-col container mx-auto ">
               <h1 className="uppercase pt-20 py-5 text-sm md:text-2xl lg:text-3xl text-brightRedLight text-center">
                 send us a message
@@ -48,15 +48,15 @@ const Contact = () => {
 
                   <div className="flex container mx-auto px-10 py-5">
                     <textarea
-                      rows={4}
-                      cols={50}
+                      rows={10}
+                      cols={100}
                       name="message"
                       placeholder="Message"
-                      className="w-full h-10 px-2 text-sm md:text-xl lg:text-2xl text-darkBlue border-brightRed border-2 rounded-md bg-veryPaleRed"
+                      className="w-full px-2 text-sm md:text-xl lg:text-2xl text-darkBlue border-brightRed border-2 rounded-md bg-veryPaleRed"
                     />
                   </div>
                 </div>
-                <div className="flex justify-center mb-10">
+                <div className="flex justify-center mb-10 mt-5">
                   <button
                     type="submit"
                     className="bg-white capitalize text-sm text-darkBlue px-10 py-2 rounded-md hover:bg-brightRedLight duration-300 lg:text-2xl md:text-xl"
