@@ -4,6 +4,7 @@ import React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import { MdOutlineStarOutline } from 'react-icons/md';
+import dynamic from 'next/dynamic';
 
 const About = () => {
   return (
@@ -12,21 +13,25 @@ const About = () => {
       <Head>
         <title>IG about</title>
       </Head>
-      <div className="min-h-screen">
-        <div className="pt-[10rem] bg-brightRedSupLight flex justify-center px-10">
-          <p className="capitalize text-sm lg:text-3xl md:text-2xl text-brightRedLight font-bold  underline pb-5">
-            about us
-          </p>
-        </div>
 
-        <div className="flex justify-center  bg-brightRedSupLight">
-          <p className="text-sm lg:text-3xl md:text-2xl text-brightRedLight rounded mb-5 lg:py-10 lg:px-10 md:py-10 md:px-10">
-            We re-imagine everyday foods made with better ingredients.
-          </p>
+      <div className="min-h-screen mt-[3rem]">
+        {/*about*/}
+        <div className="bg-brightRedSupLight pt-5">
+          <div className=" flex justify-center items-center px-10">
+            <p className="capitalize text-brightRedLight flex items-center font-bold  underline pb-5 text-sm lg:text-3xl md:text-2xl">
+              about us
+            </p>
+          </div>
+
+          <div className="px-2 pb-5">
+            <p className="text-sm text-brightRedLight rounded  lg:text-3xl md:text-2xl lg:py-10 lg:px-10 md:py-10 md:px-10">
+              We re-imagine everyday foods made with better ingredients.
+            </p>
+          </div>
         </div>
 
         {/*Mission*/}
-        <div className="min-h-[30rem] grid grid-cols-1 md:grid-cols-2 lg:container lg:px-10 pt-20">
+        <div className="min-h-[30rem] grid grid-cols-1 md:grid-cols-2 lg:container lg:px-10 pt-12">
           <div className="flex justify-center rounded-t-xl container mx-auto pt-10  md:mx-3 lg:py-5">
             <Image
               src={'/img/pic9.jpg'}
@@ -128,4 +133,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default dynamic(() => Promise.resolve(About), { ssr: false });
