@@ -69,17 +69,19 @@ const Contact = () => {
           </div>
 
           {/* contact*/}
-          <div className="bg-[#000814] mt-10 container mx-auto flex justify-center">
+          <div className="bg-black rounded-md  container mx-auto shadow-darkGrayishBlue  border-4 border-gray-100 mb-10  md:w-[40rem] md:h-[30rem] lg:w-[40rem] min-h-[40rem] md:min-h-[50rem] lg:min-h-[55rem]">
             <div>
               <h1>contact information</h1>
             </div>
             <div>
-              <SiGooglemaps size={'20'} />
+              <SiGooglemaps size={'20'} color={'white'}/>
             </div>
           </div>
         </div>
       </div>
-      <Footer />
+      <div className="mt-10">
+        <Footer />
+      </div>
     </>
   );
 };
