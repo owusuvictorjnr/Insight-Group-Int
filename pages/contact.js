@@ -70,11 +70,16 @@ const Contact = () => {
 
           {/* contact*/}
           <div className="bg-black rounded-md  container mx-auto shadow-darkGrayishBlue  border-4 border-gray-100 mb-10  md:w-[40rem] md:h-[30rem] lg:w-[40rem] min-h-[40rem] md:min-h-[50rem] lg:min-h-[55rem]">
-            <div>
-              <h1>contact information</h1>
+            <div className="flex justify-center mt-[1rem]">
+              <h1 className="uppercase pt-20 py-5 text-sm md:text-2xl lg:text-3xl text-brightRedLight text-center">
+                contact information
+              </h1>
             </div>
-            <div>
-              <SiGooglemaps size={'20'} color={'white'}/>
+            <div className="px-10 mt-16 flex gap-3">
+              <SiGooglemaps size={'20'} color={'red'} className="mt-2" />
+              <p className="text-white capitalize text-sm tracking-wider md:text-2xl">
+                sowutuom
+              </p>
             </div>
           </div>
         </div>
