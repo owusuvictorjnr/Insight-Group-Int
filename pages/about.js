@@ -24,14 +24,13 @@ const About = () => {
           </div>
 
           <div className="px-2 pb-5">
-            <p className="text-sm text-brightRedLight rounded  lg:text-3xl md:text-2xl lg:py-10 lg:px-10 md:py-10 md:px-10">
+            <p className="text-sm text-brightRedLight rounded text-center lg:text-3xl md:text-2xl lg:py-10 lg:px-10 md:py-10 md:px-10">
               We re-imagine everyday foods made with better ingredients.
             </p>
           </div>
         </div>
-
         {/*Mission*/}
-        <div className="min-h-[30rem] grid grid-cols-1 md:grid-cols-2 lg:container lg:px-10 pt-12">
+        <div className="min-h-[30rem] grid grid-cols-1 md:grid-cols-2 lg:container lg:px-10 pt-10">
           <div className="flex justify-center rounded-t-xl container mx-auto pt-10  md:mx-3 lg:py-5">
             <Image
               src={'/img/pic9.jpg'}
@@ -55,7 +54,7 @@ const About = () => {
           </div>
         </div>
         <div className="pt-10 pb-10 grid grid-cols-1 md:grid-cols-2">
-          <p className="container mx-auto flex pt-5 justify-center px-10 text-darkBlue md:text-xl lg:text-3xl">
+          <p className="container mx-auto flex pt-5 justify-center items-center px-10 text-darkBlue md:text-xl lg:text-3xl">
             As a heart-centered brand that cares about its global impact, Iya
             Foods emphasizes that key part of its brand in its mission
             statement. Describing your brand values and what you stand for is
@@ -76,7 +75,6 @@ const About = () => {
             />
           </div>
         </div>
-
         {/*Our impact*/}
         <div className="pt-10 mb-10 grid grid-cols-1 md:grid-cols-2">
           <div className="container m-auto flex justify-center shadow py-5 mt-5 md:px-3">
@@ -88,7 +86,7 @@ const About = () => {
               className="rounded-l-[4rem] md:rounded-l-[4rem] w-[24rem] h-[13rem] md:w-full md:h-[20rem] md:px-3 lg:w-[45rem] lg:h-[30rem] lg:px-5"
             />
           </div>
-          <div className="flex flex-col items-center justify-center container mx-auto pt-3">
+          <div className="flex flex-col items-center justify-center container mx-auto pt-10">
             <h1 className="text-sm text-brightRedLight capitalize font-bold md:text-2xl lg:text-3xl">
               our impact
             </h1>
@@ -127,8 +125,19 @@ const About = () => {
             </div>
           </div>
         </div>
+        <div className="mt-16 bg-slate-600 min-h-[40rem]">
+          <div className="px-10 pt-20 flex justify-center capitalize underline font-bold text-brightRedLight text-sm md:text-2xl lg:text-3xl">
+            the team
+          </div>
+
+          <div>
+            
+          </div>
+        </div>
       </div>
-      <Footer />
+      <div className="mt-10">
+        <Footer />
+      </div>
     </>
   );
 };
