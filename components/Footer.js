@@ -51,7 +51,7 @@ const Footer = () => {
 
               <li>
                 <Link href="team">
-                  <h4 className=" text-[#727374]">team</h4>
+                  <h4 className=" text-[#727374]">galery</h4>
                 </Link>
               </li>
 
