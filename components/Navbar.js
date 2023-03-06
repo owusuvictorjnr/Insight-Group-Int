@@ -59,9 +59,9 @@ const Navbar = () => {
               </ul>
             </Link>
 
-            <Link href={'/sponsors'} className="cursor-pointer ">
+            <Link href={'/donate'} className="cursor-pointer ">
               <ul className="py-2 px-2  hover:bg-brightRedLight rounded-xl hover:text-brightRedSupLight text-white bg-brightRed hover:underline duration-500  md:block ">
-                <li className="text-sm md:text-xl lg:text-2xl">sponsors</li>
+                <li className="text-sm md:text-xl lg:text-2xl">donate</li>
               </ul>
             </Link>
           </div>
